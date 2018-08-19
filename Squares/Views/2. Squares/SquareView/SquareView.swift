@@ -24,6 +24,7 @@ class SquareView: UIView {
         self.init(frame: CGRect(x: 0, y: 0, width: 160 , height: 160))
         self.squareModel = model
         self.tag = 2
+        print("teg for detectign tap evant")
         setupDefaultViewProreties()
         setValues()
         animateAppearing()

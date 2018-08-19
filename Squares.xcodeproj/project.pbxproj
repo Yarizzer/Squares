@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11AA179D2127094800E22D39 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA179C2127094800E22D39 /* SquareView.swift */; };
+		11AA17A321270A2900E22D39 /* SquareViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A221270A2900E22D39 /* SquareViewModelType.swift */; };
+		11AA17A621270A4C00E22D39 /* SquareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A521270A4C00E22D39 /* SquareViewModel.swift */; };
+		11AA17A92127130100E22D39 /* Square+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A72127130100E22D39 /* Square+CoreDataClass.swift */; };
+		11AA17AA2127130100E22D39 /* Square+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A82127130100E22D39 /* Square+CoreDataProperties.swift */; };
+		11AB2BF32125C04D006B78B8 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB2BF22125C04D006B78B8 /* AreaViewController.swift */; };
+		11AB2BF82125C0C3006B78B8 /* AreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB2BF72125C0C3006B78B8 /* AreaViewModel.swift */; };
+		11AB2BFA2125C0DB006B78B8 /* AreaViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB2BF92125C0DB006B78B8 /* AreaViewModelType.swift */; };
+		11AD29C4212313F20008C1F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29C3212313F20008C1F5 /* AppDelegate.swift */; };
+		11AD29C9212313F20008C1F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AD29C7212313F20008C1F5 /* Main.storyboard */; };
+		11AD29CC212313F20008C1F5 /* Squares.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29CA212313F20008C1F5 /* Squares.xcdatamodeld */; };
+		11AD29CE212313F40008C1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AD29CD212313F40008C1F5 /* Assets.xcassets */; };
+		11AD29D1212313F40008C1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AD29CF212313F40008C1F5 /* LaunchScreen.storyboard */; };
+		11AD29DA212314560008C1F5 /* Area+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29D8212314560008C1F5 /* Area+CoreDataClass.swift */; };
+		11AD29DB212314560008C1F5 /* Area+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29D9212314560008C1F5 /* Area+CoreDataProperties.swift */; };
+		11AD29E52123153E0008C1F5 /* AreaListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29E42123153E0008C1F5 /* AreaListTableViewController.swift */; };
+		11AD29E7212315630008C1F5 /* AreaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29E6212315630008C1F5 /* AreaListTableViewCell.swift */; };
+		11AD29ED212315F30008C1F5 /* AreaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29EC212315F30008C1F5 /* AreaListViewModel.swift */; };
+		11AD29EF2123160E0008C1F5 /* AreaListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29EE2123160E0008C1F5 /* AreaListViewModelType.swift */; };
+		11AD29F1212316470008C1F5 /* AreaListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29F0212316470008C1F5 /* AreaListCellViewModel.swift */; };
+		11AD29F3212316640008C1F5 /* AreaListCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29F2212316640008C1F5 /* AreaListCellViewModelType.swift */; };
+		11AD29F521231D7E0008C1F5 /* MainDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29F421231D7E0008C1F5 /* MainDBManager.swift */; };
+		11AD29F721231DAA0008C1F5 /* AreaDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29F621231DAA0008C1F5 /* AreaDBManager.swift */; };
+		11D2BB952123D4300086CBBD /* AreaDemands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2BB942123D4300086CBBD /* AreaDemands.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11AA179C2127094800E22D39 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		11AA17A221270A2900E22D39 /* SquareViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareViewModelType.swift; sourceTree = "<group>"; };
+		11AA17A521270A4C00E22D39 /* SquareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareViewModel.swift; sourceTree = "<group>"; };
+		11AA17A72127130100E22D39 /* Square+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11AA17A82127130100E22D39 /* Square+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11AB2BF22125C04D006B78B8 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
+		11AB2BF72125C0C3006B78B8 /* AreaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModel.swift; sourceTree = "<group>"; };
+		11AB2BF92125C0DB006B78B8 /* AreaViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModelType.swift; sourceTree = "<group>"; };
+		11AD29C0212313F20008C1F5 /* Squares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squares.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11AD29C3212313F20008C1F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11AD29C8212313F20008C1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11AD29CB212313F20008C1F5 /* Squares.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Squares.xcdatamodel; sourceTree = "<group>"; };
+		11AD29CD212313F40008C1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11AD29D0212313F40008C1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11AD29D2212313F40008C1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AD29D8212314560008C1F5 /* Area+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11AD29D9212314560008C1F5 /* Area+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11AD29E42123153E0008C1F5 /* AreaListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListTableViewController.swift; sourceTree = "<group>"; };
+		11AD29E6212315630008C1F5 /* AreaListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListTableViewCell.swift; sourceTree = "<group>"; };
+		11AD29EC212315F30008C1F5 /* AreaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewModel.swift; sourceTree = "<group>"; };
+		11AD29EE2123160E0008C1F5 /* AreaListViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewModelType.swift; sourceTree = "<group>"; };
+		11AD29F0212316470008C1F5 /* AreaListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListCellViewModel.swift; sourceTree = "<group>"; };
+		11AD29F2212316640008C1F5 /* AreaListCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListCellViewModelType.swift; sourceTree = "<group>"; };
+		11AD29F421231D7E0008C1F5 /* MainDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDBManager.swift; sourceTree = "<group>"; };
+		11AD29F621231DAA0008C1F5 /* AreaDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDBManager.swift; sourceTree = "<group>"; };
+		11D2BB942123D4300086CBBD /* AreaDemands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDemands.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11AD29BD212313F20008C1F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1195E6AE212680470069D034 /* BDEntities */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29DD2123146C0008C1F5 /* Area */,
+				1195E6AF2126805A0069D034 /* Squares */,
+			);
+			path = BDEntities;
+			sourceTree = "<group>";
+		};
+		1195E6AF2126805A0069D034 /* Squares */ = {
+			isa = PBXGroup;
+			children = (
+				11AA17A72127130100E22D39 /* Square+CoreDataClass.swift */,
+				11AA17A82127130100E22D39 /* Square+CoreDataProperties.swift */,
+			);
+			path = Squares;
+			sourceTree = "<group>";
+		};
+		11AA179B2127092A00E22D39 /* SquareView */ = {
+			isa = PBXGroup;
+			children = (
+				11AA179C2127094800E22D39 /* SquareView.swift */,
+			);
+			path = SquareView;
+			sourceTree = "<group>";
+		};
+		11AA179E2127099200E22D39 /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				11AA17A0212709FE00E22D39 /* SquareViewModel */,
+				11AA17A121270A0700E22D39 /* Protocols */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		11AA179F212709D600E22D39 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				11AB2BF52125C098006B78B8 /* VIewModel */,
+				11AB2BF62125C0AB006B78B8 /* Protocolos */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		11AA17A0212709FE00E22D39 /* SquareViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AA17A521270A4C00E22D39 /* SquareViewModel.swift */,
+			);
+			path = SquareViewModel;
+			sourceTree = "<group>";
+		};
+		11AA17A121270A0700E22D39 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				11AA17A221270A2900E22D39 /* SquareViewModelType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		11AB2BF12125BE91006B78B8 /* 2. Squares */ = {
+			isa = PBXGroup;
+			children = (
+				11AB2BFB2125C24D006B78B8 /* Controller */,
+				11AA179B2127092A00E22D39 /* SquareView */,
+			);
+			path = "2. Squares";
+			sourceTree = "<group>";
+		};
+		11AB2BF42125C088006B78B8 /* AreaViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AA179F212709D600E22D39 /* Area */,
+				11AA179E2127099200E22D39 /* Square */,
+			);
+			path = AreaViewModel;
+			sourceTree = "<group>";
+		};
+		11AB2BF52125C098006B78B8 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AB2BF72125C0C3006B78B8 /* AreaViewModel.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		11AB2BF62125C0AB006B78B8 /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				11AB2BF92125C0DB006B78B8 /* AreaViewModelType.swift */,
+			);
+			path = Protocolos;
+			sourceTree = "<group>";
+		};
+		11AB2BFB2125C24D006B78B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11AB2BF22125C04D006B78B8 /* AreaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11AD29B7212313F20008C1F5 = {
+			isa = PBXGroup;
+			children = (
+				11AD29C2212313F20008C1F5 /* Squares */,
+				11AD29C1212313F20008C1F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11AD29C1212313F20008C1F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29C0212313F20008C1F5 /* Squares.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11AD29C2212313F20008C1F5 /* Squares */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29DC2123145B0008C1F5 /* DataBase */,
+				11AD29E8212315B60008C1F5 /* ViewModels */,
+				11AD29E2212314FD0008C1F5 /* Views */,
+				11AD29C7212313F20008C1F5 /* Main.storyboard */,
+				11AD29D2212313F40008C1F5 /* Info.plist */,
+				11AD29E1212314C00008C1F5 /* SupportingFiles */,
+				11AD29CA212313F20008C1F5 /* Squares.xcdatamodeld */,
+			);
+			path = Squares;
+			sourceTree = "<group>";
+		};
+		11AD29DC2123145B0008C1F5 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				1195E6AE212680470069D034 /* BDEntities */,
+				11AD29DE2123147A0008C1F5 /* DBManagers */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		11AD29DD2123146C0008C1F5 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29D8212314560008C1F5 /* Area+CoreDataClass.swift */,
+				11AD29D9212314560008C1F5 /* Area+CoreDataProperties.swift */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		11AD29DE2123147A0008C1F5 /* DBManagers */ = {
+			isa = PBXGroup;
+			children = (
+				11D2BB932123D3E20086CBBD /* AreaTransitionDemands */,
+				11AD29DF2123148A0008C1F5 /* MainManager */,
+				11AD29E0212314A30008C1F5 /* AreaManager */,
+			);
+			path = DBManagers;
+			sourceTree = "<group>";
+		};
+		11AD29DF2123148A0008C1F5 /* MainManager */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29F421231D7E0008C1F5 /* MainDBManager.swift */,
+			);
+			path = MainManager;
+			sourceTree = "<group>";
+		};
+		11AD29E0212314A30008C1F5 /* AreaManager */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29F621231DAA0008C1F5 /* AreaDBManager.swift */,
+			);
+			path = AreaManager;
+			sourceTree = "<group>";
+		};
+		11AD29E1212314C00008C1F5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29C3212313F20008C1F5 /* AppDelegate.swift */,
+				11AD29CD212313F40008C1F5 /* Assets.xcassets */,
+				11AD29CF212313F40008C1F5 /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11AD29E2212314FD0008C1F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29E3212315040008C1F5 /* 1. AreaList */,
+				11AB2BF12125BE91006B78B8 /* 2. Squares */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11AD29E3212315040008C1F5 /* 1. AreaList */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29E42123153E0008C1F5 /* AreaListTableViewController.swift */,
+				11AD29E6212315630008C1F5 /* AreaListTableViewCell.swift */,
+			);
+			path = "1. AreaList";
+			sourceTree = "<group>";
+		};
+		11AD29E8212315B60008C1F5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29E9212315C00008C1F5 /* AreaListVIewModel */,
+				11AB2BF42125C088006B78B8 /* AreaViewModel */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		11AD29E9212315C00008C1F5 /* AreaListVIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29EA212315CB0008C1F5 /* ViewModel */,
+				11AD29EB212315D30008C1F5 /* Protocols */,
+			);
+			path = AreaListVIewModel;
+			sourceTree = "<group>";
+		};
+		11AD29EA212315CB0008C1F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29EC212315F30008C1F5 /* AreaListViewModel.swift */,
+				11AD29F0212316470008C1F5 /* AreaListCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11AD29EB212315D30008C1F5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				11AD29EE2123160E0008C1F5 /* AreaListViewModelType.swift */,
+				11AD29F2212316640008C1F5 /* AreaListCellViewModelType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		11D2BB932123D3E20086CBBD /* AreaTransitionDemands */ = {
+			isa = PBXGroup;
+			children = (
+				11D2BB942123D4300086CBBD /* AreaDemands.swift */,
+			);
+			path = AreaTransitionDemands;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11AD29BF212313F20008C1F5 /* Squares */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11AD29D5212313F40008C1F5 /* Build configuration list for PBXNativeTarget "Squares" */;
+			buildPhases = (
+				11AD29BC212313F20008C1F5 /* Sources */,
+				11AD29BD212313F20008C1F5 /* Frameworks */,
+				11AD29BE212313F20008C1F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Squares;
+			productName = Squares;
+			productReference = 11AD29C0212313F20008C1F5 /* Squares.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11AD29B8212313F20008C1F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Yaroslav Abaturov";
+				TargetAttributes = {
+					11AD29BF212313F20008C1F5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 11AD29BB212313F20008C1F5 /* Build configuration list for PBXProject "Squares" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11AD29B7212313F20008C1F5;
+			productRefGroup = 11AD29C1212313F20008C1F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11AD29BF212313F20008C1F5 /* Squares */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11AD29BE212313F20008C1F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AD29D1212313F40008C1F5 /* LaunchScreen.storyboard in Resources */,
+				11AD29CE212313F40008C1F5 /* Assets.xcassets in Resources */,
+				11AD29C9212313F20008C1F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11AD29BC212313F20008C1F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11AD29F721231DAA0008C1F5 /* AreaDBManager.swift in Sources */,
+				11AD29DA212314560008C1F5 /* Area+CoreDataClass.swift in Sources */,
+				11AD29F1212316470008C1F5 /* AreaListCellViewModel.swift in Sources */,
+				11AD29EF2123160E0008C1F5 /* AreaListViewModelType.swift in Sources */,
+				11D2BB952123D4300086CBBD /* AreaDemands.swift in Sources */,
+				11AA17AA2127130100E22D39 /* Square+CoreDataProperties.swift in Sources */,
+				11AA17A321270A2900E22D39 /* SquareViewModelType.swift in Sources */,
+				11AD29F521231D7E0008C1F5 /* MainDBManager.swift in Sources */,
+				11AA17A621270A4C00E22D39 /* SquareViewModel.swift in Sources */,
+				11AD29CC212313F20008C1F5 /* Squares.xcdatamodeld in Sources */,
+				11AD29E7212315630008C1F5 /* AreaListTableViewCell.swift in Sources */,
+				11AD29F3212316640008C1F5 /* AreaListCellViewModelType.swift in Sources */,
+				11AB2BFA2125C0DB006B78B8 /* AreaViewModelType.swift in Sources */,
+				11AD29ED212315F30008C1F5 /* AreaListViewModel.swift in Sources */,
+				11AD29E52123153E0008C1F5 /* AreaListTableViewController.swift in Sources */,
+				11AA17A92127130100E22D39 /* Square+CoreDataClass.swift in Sources */,
+				11AA179D2127094800E22D39 /* SquareView.swift in Sources */,
+				11AB2BF32125C04D006B78B8 /* AreaViewController.swift in Sources */,
+				11AB2BF82125C0C3006B78B8 /* AreaViewModel.swift in Sources */,
+				11AD29DB212314560008C1F5 /* Area+CoreDataProperties.swift in Sources */,
+				11AD29C4212313F20008C1F5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11AD29C7212313F20008C1F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AD29C8212313F20008C1F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11AD29CF212313F40008C1F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11AD29D0212313F40008C1F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11AD29D3212313F40008C1F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11AD29D4212313F40008C1F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11AD29D6212313F40008C1F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54L37Y4QC4;
+				INFOPLIST_FILE = Squares/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yaroslav-Abaturov.Squares";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11AD29D7212313F40008C1F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54L37Y4QC4;
+				INFOPLIST_FILE = Squares/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Yaroslav-Abaturov.Squares";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11AD29BB212313F20008C1F5 /* Build configuration list for PBXProject "Squares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AD29D3212313F40008C1F5 /* Debug */,
+				11AD29D4212313F40008C1F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11AD29D5212313F40008C1F5 /* Build configuration list for PBXNativeTarget "Squares" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11AD29D6212313F40008C1F5 /* Debug */,
+				11AD29D7212313F40008C1F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		11AD29CA212313F20008C1F5 /* Squares.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11AD29CB212313F20008C1F5 /* Squares.xcdatamodel */,
+			);
+			currentVersion = 11AD29CB212313F20008C1F5 /* Squares.xcdatamodel */;
+			path = Squares.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 11AD29B8212313F20008C1F5 /* Project object */;
+}

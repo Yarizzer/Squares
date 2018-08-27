@@ -97,7 +97,7 @@ class AreaListTableViewController: UITableViewController {
         
         let deleteAction = UITableViewRowAction(style: .normal, title: "Delete") { [unowned self] (action, IndexPath) in
             guard let model = self.viewModel else { return }
-            model.removeARecordFromDB()
+            model.removeAreaRecordFromDB()
             tableView.deleteRows(at: [indexPath], with: .right)
         }
 

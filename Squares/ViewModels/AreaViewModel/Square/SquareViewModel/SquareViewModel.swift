@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class SquareViewModel {
     var areaItem: Area
@@ -14,30 +15,65 @@ class SquareViewModel {
     
     private var squareView = SquareView()
     
-    init(withAreaItem areaItem: Area, squareEntity square: Square?) {
+    init(withAreaItem areaItem: Area, squareEntity square: Square?, atPoint point: CGPoint?) {
         self.areaItem = areaItem
-        self.squareItem = square
+        self.squareItem = square ??
         self.squareView = SquareView(withModel: self)
     }
 }
 
 extension SquareViewModel: SquareViewModelType {
+    //needs to return a title
     var squareTitle: String {
-        guard let squareTitle = squareItem?.title else { return "<square name not set>" }
+        guard let squareTitle = squareItem?.title else { return "" }
         return squareTitle
     }
-    
+    //needs to return a discription
     var squareDiscription: String {
-        guard let discription = squareItem?.discription else { return "<square discription not set>" }
+        guard let discription = squareItem?.discription else { return "" }
         return discription
     }
-    
+    //needs to return a deadline
+    var deadLine: Date? {
+        guard let deadLine = squareItem?.deadLine as Date? else { return nil }
+        return deadLine
+    }
+    //needs to return a view
     func getSquareView() -> SquareView {
         return squareView
     }
     
-    func terminateItem() {
-        squareView.animateTerminating()
+    func updateItemPosition(xPosition _xPosition_: Float, yPosition _yPosition_: Float) {
+        var deadLine: Date? {
+            guard let _deadLine_ = (squareItem?.deadLine as Date?) else { return nil }
+            return _deadLine_
+        }
+        var isFinished: Bool {
+            guard let finished = squareItem?.isFinished else { return false }
+            return finished
+        }
+        saveItem(xPosition: _xPosition_, yPosition: _yPosition_, deadLine: deadLine, isFinished: isFinished)
+    }
+    
+    func saveItem(xPosition _xPosition_: Float, yPosition _yPosition_: Float, deadLine _deadLine_: Date?, isFinished _finished_: Bool) {
         
+        let demands = SquareDemands(wihtArea: areaItem,
+                                    square: squareItem,
+                                    squareXPosition: _xPosition_,
+                                    squareYPosition: _yPosition_,
+                                    title: squareView.titleTextField.text ?? "",
+                                    discription: squareView.discriptionTextField.text ?? "",
+                                    deadLine: _deadLine_,
+                                    isFinished: _finished_)
+        self.squareItem = MainDBManager.shared.performARecordForSquare(withDemands: demands)
+    }
+    
+    func terminateItem() {
+        if let _square_ = squareItem {
+            MainDBManager.shared.removeSquareRecordFromDB(forSquare: _square_)
+            squareView.animateTerminating()
+        } else {
+            squareView.animateTerminating()
+        }
     }
 }

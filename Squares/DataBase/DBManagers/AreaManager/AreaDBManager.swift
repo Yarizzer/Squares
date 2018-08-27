@@ -62,6 +62,48 @@ class AreaDBManager {
         }
     }
 
+    func performARecordForSquareInDB(withDemands _demands_: SquareDemands) -> Square {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
+        
+        if let square = _demands_.square {
+            let fetchRequest: NSFetchRequest<Square> = Square.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "SELF = %@", square)
+            do {
+                let entity = try context.fetch(fetchRequest).first
+                entity?.title = _demands_.title
+                entity?.discription = _demands_.discription
+                entity?.deadLine = _demands_.deadLine
+                entity?.xPosition = _demands_.xPosition
+                entity?.yPosition = _demands_.yPosition
+                
+                try context.save()
+            } catch {
+                print(error.localizedDescription)
+            }
+            return square
+        } else {
+            let entity = NSEntityDescription.entity(forEntityName: "Square", in: context)
+            let squareObject = NSManagedObject(entity: entity!, insertInto: context) as! Square
+            squareObject.relationWithArea = _demands_.relationWithArea
+            squareObject.title = _demands_.title
+            squareObject.discription = _demands_.discription
+            squareObject.creationDate = Date() as NSDate
+            squareObject.deadLine = _demands_.deadLine
+            squareObject.isFinished = _demands_.isFinished
+            squareObject.xPosition = _demands_.xPosition
+            squareObject.yPosition = _demands_.yPosition
+            
+            do {
+                try context.save()
+            } catch {
+                print(error.localizedDescription)
+            }
+            return squareObject
+        }
+        
+    }
+    
     private func reindexOrder() {
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let context = delegate.persistentContainer.viewContext
@@ -81,12 +123,10 @@ class AreaDBManager {
         
     }
     
-    
-    func removeARecordFromDB(forArea _area_: Area) {
+    func removeAreaRecordFromDB(forArea _area_: Area) {
         
         let delegate = UIApplication.shared.delegate as! AppDelegate
         let context = delegate.persistentContainer.viewContext
-        
         
         let fetchRequest: NSFetchRequest<Area> = Area.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "SELF = %@", _area_.objectID)
@@ -94,6 +134,10 @@ class AreaDBManager {
         do {
             
             for area in try context.fetch(fetchRequest) {
+                let arreaOFRelatedSquares = area.relationWithSquares?.allObjects as! [Square]
+                for square in arreaOFRelatedSquares {
+                    removeSquareRecordFromDB(forSquare: square)
+                }
                 context.delete(area)
             }
             try context.save()
@@ -101,7 +145,25 @@ class AreaDBManager {
             print(error.localizedDescription)
         }
         reindexOrder()
-        
     }
 
+    func removeSquareRecordFromDB(forSquare _square_: Square) {
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let context = delegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Square> = Square.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "SELF = %@", _square_.objectID)
+        
+        do {
+            
+            for item in try context.fetch(fetchRequest) {
+                context.delete(item)
+            }
+            try context.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    
 }

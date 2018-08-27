@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110E034B213391D90064FDF8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 110E034A213391D90064FDF8 /* .gitignore */; };
+		1189A220212EF6370079E489 /* Square+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1189A21E212EF6370079E489 /* Square+CoreDataClass.swift */; };
+		1189A221212EF6370079E489 /* Square+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1189A21F212EF6370079E489 /* Square+CoreDataProperties.swift */; };
 		11AA179D2127094800E22D39 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA179C2127094800E22D39 /* SquareView.swift */; };
 		11AA17A321270A2900E22D39 /* SquareViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A221270A2900E22D39 /* SquareViewModelType.swift */; };
 		11AA17A621270A4C00E22D39 /* SquareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A521270A4C00E22D39 /* SquareViewModel.swift */; };
-		11AA17A92127130100E22D39 /* Square+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A72127130100E22D39 /* Square+CoreDataClass.swift */; };
-		11AA17AA2127130100E22D39 /* Square+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA17A82127130100E22D39 /* Square+CoreDataProperties.swift */; };
 		11AB2BF32125C04D006B78B8 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB2BF22125C04D006B78B8 /* AreaViewController.swift */; };
 		11AB2BF82125C0C3006B78B8 /* AreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB2BF72125C0C3006B78B8 /* AreaViewModel.swift */; };
 		11AB2BFA2125C0DB006B78B8 /* AreaViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB2BF92125C0DB006B78B8 /* AreaViewModelType.swift */; };
@@ -20,8 +21,6 @@
 		11AD29CC212313F20008C1F5 /* Squares.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29CA212313F20008C1F5 /* Squares.xcdatamodeld */; };
 		11AD29CE212313F40008C1F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AD29CD212313F40008C1F5 /* Assets.xcassets */; };
 		11AD29D1212313F40008C1F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AD29CF212313F40008C1F5 /* LaunchScreen.storyboard */; };
-		11AD29DA212314560008C1F5 /* Area+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29D8212314560008C1F5 /* Area+CoreDataClass.swift */; };
-		11AD29DB212314560008C1F5 /* Area+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29D9212314560008C1F5 /* Area+CoreDataProperties.swift */; };
 		11AD29E52123153E0008C1F5 /* AreaListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29E42123153E0008C1F5 /* AreaListTableViewController.swift */; };
 		11AD29E7212315630008C1F5 /* AreaListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29E6212315630008C1F5 /* AreaListTableViewCell.swift */; };
 		11AD29ED212315F30008C1F5 /* AreaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29EC212315F30008C1F5 /* AreaListViewModel.swift */; };
@@ -30,15 +29,19 @@
 		11AD29F3212316640008C1F5 /* AreaListCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29F2212316640008C1F5 /* AreaListCellViewModelType.swift */; };
 		11AD29F521231D7E0008C1F5 /* MainDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29F421231D7E0008C1F5 /* MainDBManager.swift */; };
 		11AD29F721231DAA0008C1F5 /* AreaDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD29F621231DAA0008C1F5 /* AreaDBManager.swift */; };
+		11CA14C8212BBC9F008807D2 /* Area+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA14C4212BBC9F008807D2 /* Area+CoreDataClass.swift */; };
+		11CA14C9212BBC9F008807D2 /* Area+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA14C5212BBC9F008807D2 /* Area+CoreDataProperties.swift */; };
+		11CA14CC212BBE11008807D2 /* SquareDemands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA14CB212BBE11008807D2 /* SquareDemands.swift */; };
 		11D2BB952123D4300086CBBD /* AreaDemands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2BB942123D4300086CBBD /* AreaDemands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110E034A213391D90064FDF8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1189A21E212EF6370079E489 /* Square+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1189A21F212EF6370079E489 /* Square+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11AA179C2127094800E22D39 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		11AA17A221270A2900E22D39 /* SquareViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareViewModelType.swift; sourceTree = "<group>"; };
 		11AA17A521270A4C00E22D39 /* SquareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareViewModel.swift; sourceTree = "<group>"; };
-		11AA17A72127130100E22D39 /* Square+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11AA17A82127130100E22D39 /* Square+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Square+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11AB2BF22125C04D006B78B8 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 		11AB2BF72125C0C3006B78B8 /* AreaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModel.swift; sourceTree = "<group>"; };
 		11AB2BF92125C0DB006B78B8 /* AreaViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewModelType.swift; sourceTree = "<group>"; };
@@ -49,8 +52,6 @@
 		11AD29CD212313F40008C1F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11AD29D0212313F40008C1F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11AD29D2212313F40008C1F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11AD29D8212314560008C1F5 /* Area+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataClass.swift"; sourceTree = "<group>"; };
-		11AD29D9212314560008C1F5 /* Area+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11AD29E42123153E0008C1F5 /* AreaListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListTableViewController.swift; sourceTree = "<group>"; };
 		11AD29E6212315630008C1F5 /* AreaListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListTableViewCell.swift; sourceTree = "<group>"; };
 		11AD29EC212315F30008C1F5 /* AreaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListViewModel.swift; sourceTree = "<group>"; };
@@ -59,6 +60,9 @@
 		11AD29F2212316640008C1F5 /* AreaListCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaListCellViewModelType.swift; sourceTree = "<group>"; };
 		11AD29F421231D7E0008C1F5 /* MainDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDBManager.swift; sourceTree = "<group>"; };
 		11AD29F621231DAA0008C1F5 /* AreaDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDBManager.swift; sourceTree = "<group>"; };
+		11CA14C4212BBC9F008807D2 /* Area+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11CA14C5212BBC9F008807D2 /* Area+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11CA14CB212BBE11008807D2 /* SquareDemands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareDemands.swift; sourceTree = "<group>"; };
 		11D2BB942123D4300086CBBD /* AreaDemands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDemands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +89,8 @@
 		1195E6AF2126805A0069D034 /* Squares */ = {
 			isa = PBXGroup;
 			children = (
-				11AA17A72127130100E22D39 /* Square+CoreDataClass.swift */,
-				11AA17A82127130100E22D39 /* Square+CoreDataProperties.swift */,
+				1189A21E212EF6370079E489 /* Square+CoreDataClass.swift */,
+				1189A21F212EF6370079E489 /* Square+CoreDataProperties.swift */,
 			);
 			path = Squares;
 			sourceTree = "<group>";
@@ -217,8 +221,8 @@
 		11AD29DD2123146C0008C1F5 /* Area */ = {
 			isa = PBXGroup;
 			children = (
-				11AD29D8212314560008C1F5 /* Area+CoreDataClass.swift */,
-				11AD29D9212314560008C1F5 /* Area+CoreDataProperties.swift */,
+				11CA14C4212BBC9F008807D2 /* Area+CoreDataClass.swift */,
+				11CA14C5212BBC9F008807D2 /* Area+CoreDataProperties.swift */,
 			);
 			path = Area;
 			sourceTree = "<group>";
@@ -227,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				11D2BB932123D3E20086CBBD /* AreaTransitionDemands */,
+				11CA14CA212BBDE9008807D2 /* SquareTransitionDemands */,
 				11AD29DF2123148A0008C1F5 /* MainManager */,
 				11AD29E0212314A30008C1F5 /* AreaManager */,
 			);
@@ -252,6 +257,7 @@
 		11AD29E1212314C00008C1F5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				110E034A213391D90064FDF8 /* .gitignore */,
 				11AD29C3212313F20008C1F5 /* AppDelegate.swift */,
 				11AD29CD212313F40008C1F5 /* Assets.xcassets */,
 				11AD29CF212313F40008C1F5 /* LaunchScreen.storyboard */,
@@ -313,6 +319,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		11CA14CA212BBDE9008807D2 /* SquareTransitionDemands */ = {
+			isa = PBXGroup;
+			children = (
+				11CA14CB212BBE11008807D2 /* SquareDemands.swift */,
+			);
+			path = SquareTransitionDemands;
+			sourceTree = "<group>";
+		};
 		11D2BB932123D3E20086CBBD /* AreaTransitionDemands */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +367,7 @@
 				TargetAttributes = {
 					11AD29BF212313F20008C1F5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -379,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110E034B213391D90064FDF8 /* .gitignore in Resources */,
 				11AD29D1212313F40008C1F5 /* LaunchScreen.storyboard in Resources */,
 				11AD29CE212313F40008C1F5 /* Assets.xcassets in Resources */,
 				11AD29C9212313F20008C1F5 /* Main.storyboard in Resources */,
@@ -393,25 +409,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				11AD29F721231DAA0008C1F5 /* AreaDBManager.swift in Sources */,
-				11AD29DA212314560008C1F5 /* Area+CoreDataClass.swift in Sources */,
 				11AD29F1212316470008C1F5 /* AreaListCellViewModel.swift in Sources */,
 				11AD29EF2123160E0008C1F5 /* AreaListViewModelType.swift in Sources */,
 				11D2BB952123D4300086CBBD /* AreaDemands.swift in Sources */,
-				11AA17AA2127130100E22D39 /* Square+CoreDataProperties.swift in Sources */,
+				11CA14C8212BBC9F008807D2 /* Area+CoreDataClass.swift in Sources */,
 				11AA17A321270A2900E22D39 /* SquareViewModelType.swift in Sources */,
 				11AD29F521231D7E0008C1F5 /* MainDBManager.swift in Sources */,
 				11AA17A621270A4C00E22D39 /* SquareViewModel.swift in Sources */,
 				11AD29CC212313F20008C1F5 /* Squares.xcdatamodeld in Sources */,
 				11AD29E7212315630008C1F5 /* AreaListTableViewCell.swift in Sources */,
 				11AD29F3212316640008C1F5 /* AreaListCellViewModelType.swift in Sources */,
+				11CA14CC212BBE11008807D2 /* SquareDemands.swift in Sources */,
 				11AB2BFA2125C0DB006B78B8 /* AreaViewModelType.swift in Sources */,
+				1189A221212EF6370079E489 /* Square+CoreDataProperties.swift in Sources */,
 				11AD29ED212315F30008C1F5 /* AreaListViewModel.swift in Sources */,
 				11AD29E52123153E0008C1F5 /* AreaListTableViewController.swift in Sources */,
-				11AA17A92127130100E22D39 /* Square+CoreDataClass.swift in Sources */,
+				11CA14C9212BBC9F008807D2 /* Area+CoreDataProperties.swift in Sources */,
 				11AA179D2127094800E22D39 /* SquareView.swift in Sources */,
 				11AB2BF32125C04D006B78B8 /* AreaViewController.swift in Sources */,
 				11AB2BF82125C0C3006B78B8 /* AreaViewModel.swift in Sources */,
-				11AD29DB212314560008C1F5 /* Area+CoreDataProperties.swift in Sources */,
+				1189A220212EF6370079E489 /* Square+CoreDataClass.swift in Sources */,
 				11AD29C4212313F20008C1F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,7 +582,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Yaroslav-Abaturov.Squares";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -583,7 +600,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Yaroslav-Abaturov.Squares";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

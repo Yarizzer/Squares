@@ -53,10 +53,10 @@ extension AreaListViewModel: AreaListViewModelType {
         }
     }
     
-    func removeARecordFromDB() {
+    func removeAreaRecordFromDB() {
         guard let currIndex = currentIndexPath else { return }
         let area = arrayOfAreas[currIndex.row]
-        MainDBManager.shared.removeARecordFromDB(forArea: area)
+        MainDBManager.shared.removeAreaRecordFromDB(forArea: area)
         updateAreasArray()
     }
     

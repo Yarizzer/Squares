@@ -21,7 +21,16 @@ class MainDBManager {
         AreaDBManager.shared.peformARecordForAreaInDB(withDemands: _demands_)
     }
     
-    func removeARecordFromDB(forArea _area_: Area) {
-        AreaDBManager.shared.removeARecordFromDB(forArea: _area_)
+    func performARecordForSquare(withDemands _demands_: SquareDemands) -> Square {
+        return AreaDBManager.shared.performARecordForSquareInDB(withDemands: _demands_)
+//        AreaDBManager.shared.performARecordForSquareInDB(withDemands: _demands_)
+    }
+    
+    func removeAreaRecordFromDB(forArea _area_: Area) {
+        AreaDBManager.shared.removeAreaRecordFromDB(forArea: _area_)
+    }
+    
+    func removeSquareRecordFromDB(forSquare _square_: Square) {
+        AreaDBManager.shared.removeSquareRecordFromDB(forSquare: _square_)
     }
 }

@@ -16,7 +16,7 @@ protocol AreaListViewModelType {
     func getAreaNameForEditingRow() -> String
     func getModelForCell(atIndexPath indexPath: IndexPath) -> AreaListCellViewModelType?
     func peformARecordForAreaInDB(withTitle _title_: String, recordKey recKey: String)
-    func removeARecordFromDB()
+    func removeAreaRecordFromDB()
     
     func getModelForAreaVC() -> AreaViewModelType?
 }

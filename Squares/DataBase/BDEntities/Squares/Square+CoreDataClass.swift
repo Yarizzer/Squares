@@ -2,7 +2,7 @@
 //  Square+CoreDataClass.swift
 //  Squares
 //
-//  Created by Yaroslav Abaturov on 17/08/2018.
+//  Created by Yarr!zzeR on 23/08/2018.
 //  Copyright © 2018 Yaroslav Abaturov. All rights reserved.
 //
 //

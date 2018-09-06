@@ -9,11 +9,12 @@
 import Foundation
 
 protocol SquareViewModelType {
+    var squareItemsExists: Bool { get }
     var squareTitle: String { get }
     var squareDiscription: String { get }
     var deadLine: Date? { get }
     func getSquareView() -> SquareView
     func updateItemPosition(xPosition _xPosition_: Float, yPosition _yPosition_: Float)
-    func saveItem(xPosition _xPosition_: Float, yPosition _yPosition_: Float, deadLine _deadLine_: Date?, isFinished _finished_: Bool)
+    func saveItem(xPosition _xPosition_: Float, yPosition _yPosition_: Float, isFinished _finished_: Bool)
     func terminateItem()
 }

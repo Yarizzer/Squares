@@ -32,6 +32,7 @@
 		11CA14C8212BBC9F008807D2 /* Area+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA14C4212BBC9F008807D2 /* Area+CoreDataClass.swift */; };
 		11CA14C9212BBC9F008807D2 /* Area+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA14C5212BBC9F008807D2 /* Area+CoreDataProperties.swift */; };
 		11CA14CC212BBE11008807D2 /* SquareDemands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA14CB212BBE11008807D2 /* SquareDemands.swift */; };
+		11CCD33A2134F03300F049A9 /* SquareSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCD3392134F03300F049A9 /* SquareSettingsViewController.swift */; };
 		11D2BB952123D4300086CBBD /* AreaDemands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2BB942123D4300086CBBD /* AreaDemands.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		11CA14C4212BBC9F008807D2 /* Area+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataClass.swift"; sourceTree = "<group>"; };
 		11CA14C5212BBC9F008807D2 /* Area+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Area+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11CA14CB212BBE11008807D2 /* SquareDemands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareDemands.swift; sourceTree = "<group>"; };
+		11CCD3392134F03300F049A9 /* SquareSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareSettingsViewController.swift; sourceTree = "<group>"; };
 		11D2BB942123D4300086CBBD /* AreaDemands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDemands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -270,6 +272,7 @@
 			children = (
 				11AD29E3212315040008C1F5 /* 1. AreaList */,
 				11AB2BF12125BE91006B78B8 /* 2. Squares */,
+				11CCD3382134EFF800F049A9 /* 3. SquareSettings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,6 +328,14 @@
 				11CA14CB212BBE11008807D2 /* SquareDemands.swift */,
 			);
 			path = SquareTransitionDemands;
+			sourceTree = "<group>";
+		};
+		11CCD3382134EFF800F049A9 /* 3. SquareSettings */ = {
+			isa = PBXGroup;
+			children = (
+				11CCD3392134F03300F049A9 /* SquareSettingsViewController.swift */,
+			);
+			path = "3. SquareSettings";
 			sourceTree = "<group>";
 		};
 		11D2BB932123D3E20086CBBD /* AreaTransitionDemands */ = {
@@ -423,6 +434,7 @@
 				11AB2BFA2125C0DB006B78B8 /* AreaViewModelType.swift in Sources */,
 				1189A221212EF6370079E489 /* Square+CoreDataProperties.swift in Sources */,
 				11AD29ED212315F30008C1F5 /* AreaListViewModel.swift in Sources */,
+				11CCD33A2134F03300F049A9 /* SquareSettingsViewController.swift in Sources */,
 				11AD29E52123153E0008C1F5 /* AreaListTableViewController.swift in Sources */,
 				11CA14C9212BBC9F008807D2 /* Area+CoreDataProperties.swift in Sources */,
 				11AA179D2127094800E22D39 /* SquareView.swift in Sources */,

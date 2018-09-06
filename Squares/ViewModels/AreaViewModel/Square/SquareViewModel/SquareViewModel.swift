@@ -15,14 +15,18 @@ class SquareViewModel {
     
     private var squareView = SquareView()
     
-    init(withAreaItem areaItem: Area, squareEntity square: Square?, atPoint point: CGPoint?) {
+    init(withAreaItem areaItem: Area, squareEntity square: Square?) {
         self.areaItem = areaItem
-        self.squareItem = square ??
+        self.squareItem = square
         self.squareView = SquareView(withModel: self)
     }
 }
 
 extension SquareViewModel: SquareViewModelType {
+    //needs to scheck new model for squareView
+    var squareItemsExists: Bool {
+        return squareItem == nil ? false : true
+    }
     //needs to return a title
     var squareTitle: String {
         guard let squareTitle = squareItem?.title else { return "" }
@@ -52,10 +56,10 @@ extension SquareViewModel: SquareViewModelType {
             guard let finished = squareItem?.isFinished else { return false }
             return finished
         }
-        saveItem(xPosition: _xPosition_, yPosition: _yPosition_, deadLine: deadLine, isFinished: isFinished)
+        saveItem(xPosition: _xPosition_, yPosition: _yPosition_, isFinished: isFinished)
     }
     
-    func saveItem(xPosition _xPosition_: Float, yPosition _yPosition_: Float, deadLine _deadLine_: Date?, isFinished _finished_: Bool) {
+    func saveItem(xPosition _xPosition_: Float, yPosition _yPosition_: Float, isFinished _finished_: Bool) {
         
         let demands = SquareDemands(wihtArea: areaItem,
                                     square: squareItem,
@@ -63,7 +67,7 @@ extension SquareViewModel: SquareViewModelType {
                                     squareYPosition: _yPosition_,
                                     title: squareView.titleTextField.text ?? "",
                                     discription: squareView.discriptionTextField.text ?? "",
-                                    deadLine: _deadLine_,
+                                    deadLine: squareView.deadlineSwitcher.isOn ? squareView.deadline.date : nil,
                                     isFinished: _finished_)
         self.squareItem = MainDBManager.shared.performARecordForSquare(withDemands: demands)
     }

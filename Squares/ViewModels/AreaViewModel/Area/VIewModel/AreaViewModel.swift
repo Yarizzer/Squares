@@ -50,7 +50,7 @@ class AreaViewModel {
     private func populateAllExistingSquares() {
         let arrayOfSquares = areaEntity.relationWithSquares?.allObjects as! [Square]
         for i in arrayOfSquares {
-            let squareModel = SquareViewModel(withAreaItem: areaEntity, squareEntity: i, atPoint: nil)
+            let squareModel = SquareViewModel(withAreaItem: areaEntity, squareEntity: i)
             let squareView = squareModel.getSquareView()
             addGestures(toSquareView: squareView)
             squareView.frame.origin = CGPoint(x: CGFloat(i.xPosition), y: CGFloat(i.yPosition))
@@ -63,7 +63,7 @@ class AreaViewModel {
         //Creation a square here
         let point = sender.location(in: areaView)
         if sender.view?.tag == 1 {
-            let squareModel = SquareViewModel(withAreaItem: areaEntity, squareEntity: nil, atPoint: point)
+            let squareModel = SquareViewModel(withAreaItem: areaEntity, squareEntity: nil)
             
             let newSquare = squareModel.getSquareView()
             addGestures(toSquareView: newSquare)

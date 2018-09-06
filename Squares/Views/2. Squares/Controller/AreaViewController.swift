@@ -44,8 +44,4 @@ class AreaViewController: UIViewController, UIScrollViewDelegate {
         scrollView.addSubview(model.getAreaView())
     }
     
-    
-    
-    
-    
 }
